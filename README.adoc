@@ -1,4 +1,4 @@
-= project1
+= BonitaTest
 Généré avec Bonita
 v7.11.5, {docdate}
 :toc: left
@@ -29,15 +29,18 @@ _Aucune description disponible_
 
 [grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
 |===
-|Nom                                |Type          |Description
-|[[CC.persistenceId]]persistenceId* |Long          |           
-|[[CC.qteChoco]]qteChoco            |Integer       |           
-|[[CC.qteCoco]]qteCoco              |Integer       |           
-|[[CC.qteVanille]]qteVanille        |Integer       |           
-|[[CC.dateHeureRecup]]dateHeureRecup|OffsetDateTime|           
-|[[CC.emailClient]]emailClient      |String        |           
-|[[CC.telClient]]telClient          |String        |           
-|[[CC.lieuRecup]]lieuRecup          |String        |           
+|Nom                                                    |Type          |Description
+|[[CC.persistenceId]]persistenceId*                     |Long          |           
+|[[CC.qteChoco]]qteChoco                                |Integer       |           
+|[[CC.qteCoco]]qteCoco                                  |Integer       |           
+|[[CC.qteVanille]]qteVanille                            |Integer       |           
+|[[CC.dateHeureRecup]]dateHeureRecup                    |OffsetDateTime|           
+|[[CC.emailClient]]emailClient                          |String        |           
+|[[CC.telClient]]telClient                              |String        |           
+|[[CC.lieuRecup]]lieuRecup                              |String        |           
+|[[CC.dateHeureRecupConfirme]]dateHeureRecupConfirme    |OffsetDateTime|           
+|[[CC.commentaireRecupConfirme]]commentaireRecupConfirme|String        |           
+|[[CC.nomClient]]nomClient                              |String        |           
 |===
 
 == Processus
@@ -55,6 +58,27 @@ image::processes/Vente Mochi-1.0.png[]
 |===
 |Nom                                                                                                      |Description                                                        
 |[[_720665b3-1aeb-3bab-ac0f-071c88a7b546]]Employee actor icon:play-circle[title="Initiateur du processus"]|Ceci est un exemple d'acteur associé à tous les utilisateurs d'ACME
+|[[_790a1bdb-3c0d-328f-890a-540e106f325f]]Client                                                          |                                                                   
+|[[_1a4ad04a-ab68-3757-b9e4-3b76e28cc919]]Cuisinier                                                       |                                                                   
+|[[_41db7cb2-f091-3942-a47f-6d85850fcd1f]]Livreur                                                         |                                                                   
+|[[_e80191e0-1272-3229-9907-344e5369744a]]Marketing                                                       |                                                                   
+|===
+
+==== icon:cog[] Paramètres
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Nom         |Type  |Description
+|emailEmeteur|String|           
+|===
+
+==== icon:file[] Documents
+
+[grid=cols,options="header",cols="1,3a",stripes=even,frame=topbot]
+|===
+|Nom                                                    |Description
+|[[_bdd40fd1-6506-3d77-85df-23afba711dd5]]wordTest      |           
+|[[_8af73081-c308-3642-a553-03bac3193b0f]]wordTestGenere|           
 |===
 
 ==== Formulaire d'instanciation
@@ -73,6 +97,7 @@ Page generated with Bonita UI designer
 |Input         |Qte Vanille               |           
 |DateTimePicker|Date Heure de récupération|           
 |Input         |Lieu de récupération      |           
+|Input         |Nom Client                |           
 |Input         |Email Client              |           
 |Input         |Tel Client                |           
 |Button        |Submit                    |           
@@ -90,7 +115,8 @@ Page generated with Bonita UI designer
     dateHeureRecup ([olive]_Offsetdatetime_),
     emailClient ([olive]_Text_),
     telClient ([olive]_Text_),
-    lieuRecup ([olive]_Text_)
+    lieuRecup ([olive]_Text_),
+    nomClient ([olive]_Text_)
 }
 
 ==== image:icons/Lane.png[title="Lane"] Employé (lane) (<<_720665b3-1aeb-3bab-ac0f-071c88a7b546,icon:user[title="Acteur"] Employee actor>>)
@@ -117,13 +143,360 @@ _Aucune description disponible_
 
 ===== icon:arrow-right[] Transition(s) sortante(s)
 
+*Vers <<_554a25b6-9d83-3b26-b7fc-a7319e0991af,Porte3>>*
+
+==== [[_554a25b6-9d83-3b26-b7fc-a7319e0991af]]image:icons/ANDGateway.png[title="ANDGateway"] Porte3
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_e8cdc39e-a239-31e6-950f-3bf4f9036ede,envoiEmailCuisinier>>
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_10c82ea5-7c84-3c62-8435-1fe5678f3c8a,Étape2>>*
+
+*Vers <<_a51f48bc-65bb-3db5-8e71-c72e13791b6c,Étape1>>*
+
+==== [[_10c82ea5-7c84-3c62-8435-1fe5678f3c8a]]image:icons/Task.png[title="Task"] Étape2
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_554a25b6-9d83-3b26-b7fc-a7319e0991af,Porte3>>
+
+===== [[_8a3e03ec-4369-3a28-a2f2-19466372f054]]image:icons/page.png[] testForm
+
+Page generated with Bonita UI designer
+
+.Widgets
+[caption=,grid=cols,options="header",cols="1,2,4a",stripes=even,frame=topbot]
+|===
+|Type    |Libellé|Description
+|Title   |       |           
+|Text    |       |           
+|Checkbox|Bool   |           
+|Button  |Submit |           
+|Text    |       |           
+|===
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_4a95312f-d4c6-3679-be57-86ebba61ef3e,Porte4>>*
+
+==== [[_a51f48bc-65bb-3db5-8e71-c72e13791b6c]]image:icons/Task.png[title="Task"] Étape1
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_554a25b6-9d83-3b26-b7fc-a7319e0991af,Porte3>>
+
+===== [[_8a3e03ec-4369-3a28-a2f2-19466372f054]]image:icons/page.png[] testForm
+
+Page generated with Bonita UI designer
+
+.Widgets
+[caption=,grid=cols,options="header",cols="1,2,4a",stripes=even,frame=topbot]
+|===
+|Type    |Libellé|Description
+|Title   |       |           
+|Text    |       |           
+|Checkbox|Bool   |           
+|Button  |Submit |           
+|Text    |       |           
+|===
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_4a95312f-d4c6-3679-be57-86ebba61ef3e,Porte4>>*
+
+==== [[_4a95312f-d4c6-3679-be57-86ebba61ef3e]]image:icons/ANDGateway.png[title="ANDGateway"] Porte4
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_a51f48bc-65bb-3db5-8e71-c72e13791b6c,Étape1>>, <<_10c82ea5-7c84-3c62-8435-1fe5678f3c8a,Étape2>>
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
 *Vers <<_63fed123-c289-3e0a-98a8-d2a6d41c154b,confirmationCommande>>*
+
+==== [[_703b20e1-094a-339b-bd38-c108cc127875]]image:icons/EndEvent.png[title="EndEvent"] Fin1
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_a03bbb60-aff6-348e-b391-91ac981cc07b,EnvoieEmailAnnule>>, <<_e9e32796-8d36-34ce-a240-2e7301120c1b,Envoie emails recommendation>>, <<_3772d519-02c0-3047-a7a2-6365a552b085,Commentaire client>>
+
+==== [[_a03bbb60-aff6-348e-b391-91ac981cc07b]]image:icons/ServiceTask.png[title="ServiceTask"] EnvoieEmailAnnule
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_1049c2e9-571e-3f44-a17b-c29d6c232705,checkSiModifié>>
+
+===== icon:plug[] Connecteurs en sortie
+
+*Courriel: EnvoiEmailAnnule*
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_703b20e1-094a-339b-bd38-c108cc127875,Fin1>>*
+
+==== [[_1049c2e9-571e-3f44-a17b-c29d6c232705]]image:icons/XORGateway.png[title="XORGateway"] checkSiModifié
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_63fed123-c289-3e0a-98a8-d2a6d41c154b,confirmationCommande>>
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+Commande confirmé: Vers <<_a5da5cca-b555-3d9e-a5b2-8d08d2904a73,Génération facture>>::
++
+.Quand:
+[source,groovy]
+----
+if (commandeConfirme == true){
+	if (commandeMochi.getQteChoco() == 0 && commandeMochi.getQteCoco() == 0 && commandeMochi.getQteVanille() == 0){
+		return false;
+	}else{
+		return true;
+	}
+}else{
+	return false;
+}
+----
+
+*Commande modifié: Vers <<_7934620d-b1a5-3705-94ff-a81533735cba,envoiEmailConfirmation>> (par défaut)*
+
+Commande confirmé: Vers <<_a03bbb60-aff6-348e-b391-91ac981cc07b,EnvoieEmailAnnule>>::
++
+.Quand:
+[source,groovy]
+----
+if (commandeConfirme == true){
+	if (commandeMochi.getQteChoco() == 0 && commandeMochi.getQteCoco() == 0 && commandeMochi.getQteVanille() == 0) {
+		return true;
+	}else{
+		return false;
+	}
+}else{
+	return false;
+}
+----
+
+==== [[_a5da5cca-b555-3d9e-a5b2-8d08d2904a73]]image:icons/ServiceTask.png[title="ServiceTask"] Génération facture
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_1049c2e9-571e-3f44-a17b-c29d6c232705,checkSiModifié>>
+
+===== icon:plug[] Connecteurs en sortie
+
+*Insérer des données dans un modèle .docx/.odt: Facture*
+*Courriel: envoiFacture*
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_d69e2bc7-21f3-3c8b-9414-dc0d4fc7ec2a,Porte1>>*
+
+==== [[_d69e2bc7-21f3-3c8b-9414-dc0d4fc7ec2a]]image:icons/InclusiveGateway.png[title="InclusiveGateway"] Porte1
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_a5da5cca-b555-3d9e-a5b2-8d08d2904a73,Génération facture>>
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+Vers <<_339f9557-b5bc-35d1-9daa-ed9707299a16,Fabrication Mochi choco>>::
++
+.Quand:
+[source,groovy]
+----
+return commandeMochi.getQteChoco() > 0;
+----
+
+Vers <<_fba18def-0aa0-3018-8081-ef6dff60b2b3,Fabrication Mochi Coco>>::
++
+.Quand:
+[source,groovy]
+----
+return commandeMochi.getQteCoco() > 0;
+----
+
+*Vers <<_796ec9e5-d4c8-3a13-884c-0fe548ee48f7,Porte2>> (par défaut)*
+
+Vers <<_961e297f-548c-362b-b7bb-184cd7d9b21d,Fabrication Mochi Vanille>>::
++
+.Quand:
+[source,groovy]
+----
+return commandeMochi.getQteVanille() > 0;
+----
+
+==== [[_961e297f-548c-362b-b7bb-184cd7d9b21d]]image:icons/Task.png[title="Task"] Fabrication Mochi Vanille
+
+vanille
+
+*Élément(s) précédent*: <<_d69e2bc7-21f3-3c8b-9414-dc0d4fc7ec2a,Porte1>>
+
+===== [[_9bf4da76-fb8b-33bc-a38e-c45b0af339ec]]image:icons/page.png[] fabricationMochi
+
+Page generated with Bonita UI designer
+
+.Widgets
+[caption=,grid=cols,options="header",cols="1,2,4a",stripes=even,frame=topbot]
+|===
+|Type          |Libellé                               |Description
+|Title         |                                      |           
+|Input         |Quantité {{ task.displayDescription }}|           
+|DateTimePicker|Date Limite                           |           
+|Button        |Commande terminé                      |           
+|Text          |                                      |           
+|===
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_796ec9e5-d4c8-3a13-884c-0fe548ee48f7,Porte2>>*
+
+==== [[_fba18def-0aa0-3018-8081-ef6dff60b2b3]]image:icons/Task.png[title="Task"] Fabrication Mochi Coco
+
+coco
+
+*Élément(s) précédent*: <<_d69e2bc7-21f3-3c8b-9414-dc0d4fc7ec2a,Porte1>>
+
+===== [[_9bf4da76-fb8b-33bc-a38e-c45b0af339ec]]image:icons/page.png[] fabricationMochi
+
+Page generated with Bonita UI designer
+
+.Widgets
+[caption=,grid=cols,options="header",cols="1,2,4a",stripes=even,frame=topbot]
+|===
+|Type          |Libellé                               |Description
+|Title         |                                      |           
+|Input         |Quantité {{ task.displayDescription }}|           
+|DateTimePicker|Date Limite                           |           
+|Button        |Commande terminé                      |           
+|Text          |                                      |           
+|===
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_796ec9e5-d4c8-3a13-884c-0fe548ee48f7,Porte2>>*
+
+==== [[_339f9557-b5bc-35d1-9daa-ed9707299a16]]image:icons/Task.png[title="Task"] Fabrication Mochi choco
+
+choco
+
+*Élément(s) précédent*: <<_d69e2bc7-21f3-3c8b-9414-dc0d4fc7ec2a,Porte1>>
+
+===== [[_9bf4da76-fb8b-33bc-a38e-c45b0af339ec]]image:icons/page.png[] fabricationMochi
+
+Page generated with Bonita UI designer
+
+.Widgets
+[caption=,grid=cols,options="header",cols="1,2,4a",stripes=even,frame=topbot]
+|===
+|Type          |Libellé                               |Description
+|Title         |                                      |           
+|Input         |Quantité {{ task.displayDescription }}|           
+|DateTimePicker|Date Limite                           |           
+|Button        |Commande terminé                      |           
+|Text          |                                      |           
+|===
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_796ec9e5-d4c8-3a13-884c-0fe548ee48f7,Porte2>>*
+
+==== [[_796ec9e5-d4c8-3a13-884c-0fe548ee48f7]]image:icons/InclusiveGateway.png[title="InclusiveGateway"] Porte2
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_339f9557-b5bc-35d1-9daa-ed9707299a16,Fabrication Mochi choco>>, <<_fba18def-0aa0-3018-8081-ef6dff60b2b3,Fabrication Mochi Coco>>, <<_961e297f-548c-362b-b7bb-184cd7d9b21d,Fabrication Mochi Vanille>>, <<_d69e2bc7-21f3-3c8b-9414-dc0d4fc7ec2a,Porte1>>
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_176baca2-21b9-3bf2-8552-7592fd967f66,Confirmation livraison>>*
+
+==== [[_176baca2-21b9-3bf2-8552-7592fd967f66]]image:icons/Task.png[title="Task"] Confirmation livraison
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_796ec9e5-d4c8-3a13-884c-0fe548ee48f7,Porte2>>
+
+===== [[_b04764e8-ac6c-3781-a86f-0c2e386fc9d0]]image:icons/page.png[] formConfirmLivraison
+
+Page generated with Bonita UI designer
+
+.Widgets
+[caption=,grid=cols,options="header",cols="1,2,4a",stripes=even,frame=topbot]
+|===
+|Type          |Libellé      |Description
+|Title         |             |           
+|Text          |             |           
+|Text          |Default label|           
+|DateTimePicker|Livrer avant |           
+|Textarea      |Commentaire  |           
+|Button        |Submit       |           
+|Text          |             |           
+|===
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_3772d519-02c0-3047-a7a2-6365a552b085,Commentaire client>>*
+
+==== [[_3772d519-02c0-3047-a7a2-6365a552b085]]image:icons/Task.png[title="Task"] Commentaire client
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_176baca2-21b9-3bf2-8552-7592fd967f66,Confirmation livraison>>
+
+===== [[_5e12f706-94fd-3deb-adcd-6f793ebc8048]]image:icons/page.png[] commentairesClient
+
+Page generated with Bonita UI designer
+
+.Widgets
+[caption=,grid=cols,options="header",cols="1,2,4a",stripes=even,frame=topbot]
+|===
+|Type          |Libellé                                         |Description
+|Title         |                                                |           
+|Text          |                                                |           
+|Text          |Default label                                   |           
+|Input         |Note                                            |           
+|DateTimePicker|Date Heure                                      |           
+|Title         |                                                |           
+|Input         |                                                |           
+|Button        |<span class="glyphicon glyphicon-remove"></span>|           
+|Button        |<span class="glyphicon glyphicon-plus"></span>  |           
+|Input         |Commentaires                                    |           
+|Button        |Submit                                          |           
+|Text          |                                                |           
+|===
+
+===== icon:bolt[] Évènements de bordure
+
+image:icons/BoundaryTimerEvent.png[] Boundary Minuterie1:: _Aucune description disponible_
++
+*2min attente: Vers <<_703b20e1-094a-339b-bd38-c108cc127875,Fin1>>*
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_e9e32796-8d36-34ce-a240-2e7301120c1b,Envoie emails recommendation>>*
+
+==== [[_e9e32796-8d36-34ce-a240-2e7301120c1b]]image:icons/ServiceTask.png[title="ServiceTask"] image:icons/SEQUENTIAL.png[title="Multi-instance séquentielle"] Envoie emails recommendation
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_3772d519-02c0-3047-a7a2-6365a552b085,Commentaire client>>
+
+===== icon:plug[] Connecteurs en sortie
+
+*Courriel: envoieEmailRecommendationClient*
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_703b20e1-094a-339b-bd38-c108cc127875,Fin1>>*
 
 ==== [[_63fed123-c289-3e0a-98a8-d2a6d41c154b]]image:icons/Task.png[title="Task"] confirmationCommande
 
 _Aucune description disponible_
 
-*Élément(s) précédent*: <<_e8cdc39e-a239-31e6-950f-3bf4f9036ede,envoiEmailCuisinier>>, <<_7934620d-b1a5-3705-94ff-a81533735cba,envoiEmailConfirmation>>
+*Élément(s) précédent*: <<_7934620d-b1a5-3705-94ff-a81533735cba,envoiEmailConfirmation>>, <<_4a95312f-d4c6-3679-be57-86ebba61ef3e,Porte4>>
 
 ===== [[_2ca12b64-aa06-3e7a-9981-9abedbfa6d77]]image:icons/page.png[] formConfirmMochi
 
@@ -152,24 +525,6 @@ Page generated with Bonita UI designer
 
 *Vers <<_1049c2e9-571e-3f44-a17b-c29d6c232705,checkSiModifié>>*
 
-==== [[_1049c2e9-571e-3f44-a17b-c29d6c232705]]image:icons/XORGateway.png[title="XORGateway"] checkSiModifié
-
-_Aucune description disponible_
-
-*Élément(s) précédent*: <<_63fed123-c289-3e0a-98a8-d2a6d41c154b,confirmationCommande>>
-
-===== icon:arrow-right[] Transition(s) sortante(s)
-
-Commande OK: Vers <<_703b20e1-094a-339b-bd38-c108cc127875,Fin1>>::
-+
-.Quand:
-[source,groovy]
-----
-commandeConfirme
-----
-
-*Commande modifié: Vers <<_7934620d-b1a5-3705-94ff-a81533735cba,envoiEmailConfirmation>> (par défaut)*
-
 ==== [[_7934620d-b1a5-3705-94ff-a81533735cba]]image:icons/ServiceTask.png[title="ServiceTask"] envoiEmailConfirmation
 
 _Aucune description disponible_
@@ -183,12 +538,6 @@ _Aucune description disponible_
 ===== icon:arrow-right[] Transition(s) sortante(s)
 
 *Vers <<_63fed123-c289-3e0a-98a8-d2a6d41c154b,confirmationCommande>>*
-
-==== [[_703b20e1-094a-339b-bd38-c108cc127875]]image:icons/EndEvent.png[title="EndEvent"] Fin1
-
-_Aucune description disponible_
-
-*Élément(s) précédent*: <<_1049c2e9-571e-3f44-a17b-c29d6c232705,checkSiModifié>>
 
 == Diagrammes
 
@@ -209,20 +558,23 @@ Visitez https://graphviz.org/download/ pour plus d'informations.
 
 [grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
 |===
-|Chemin d'accès           |Nom métier            |Description                                                                         
-|/acme                    |Acme                  |This group represents the acme department of the ACME organization                  
-|/acme/hr                 |Human Resources       |This group represents the human resources department of the ACME organization       
-|/acme/finance            |Finance               |This group represents the finance department of the ACME organization               
-|/acme/it                 |Infrastructure        |This group represents the infrastructure department of the ACME organization        
-|/acme/marketing          |Marketing             |This group represents the marketing department of the ACME organization             
-|/acme/production         |Production            |This group represents the production department of the ACME organization            
-|/acme/production/rd      |Research & Development|This group represents the research & development department of the ACME organization
-|/acme/production/services|Services              |This group represents the services department of the ACME organization              
-|/acme/sales              |Sales                 |This group represents the sales department of the ACME organization                 
-|/acme/sales/europe       |Europe                |This group represents the europe department of the ACME organization                
-|/acme/sales/asia         |Asia                  |This group represents the asia department of the ACME organization                  
-|/acme/sales/latin_america|Latin America         |This group represents the latin america department of the ACME organization         
-|/acme/sales/north_america|North America         |This group represents the north america department of the ACME organization         
+|Chemin d'accès            |Nom métier            |Description                                                                         
+|/acme                     |Acme                  |This group represents the acme department of the ACME organization                  
+|/acme/hr                  |Human Resources       |This group represents the human resources department of the ACME organization       
+|/acme/finance             |Finance               |This group represents the finance department of the ACME organization               
+|/acme/it                  |Infrastructure        |This group represents the infrastructure department of the ACME organization        
+|/acme/marketing           |Marketing             |This group represents the marketing department of the ACME organization             
+|/acme/production          |Production            |This group represents the production department of the ACME organization            
+|/acme/production/rd       |Research & Development|This group represents the research & development department of the ACME organization
+|/acme/production/services |Services              |This group represents the services department of the ACME organization              
+|/acme/production/Cuisinier|Cuisinier             |                                                                                    
+|/acme/production/Livreur  |Livreur               |                                                                                    
+|/acme/sales               |Sales                 |This group represents the sales department of the ACME organization                 
+|/acme/sales/europe        |Europe                |This group represents the europe department of the ACME organization                
+|/acme/sales/asia          |Asia                  |This group represents the asia department of the ACME organization                  
+|/acme/sales/latin_america |Latin America         |This group represents the latin america department of the ACME organization         
+|/acme/sales/north_america |North America         |This group represents the north america department of the ACME organization         
+|/Client                   |Client                |                                                                                    
 |===
 
 === Rôles
