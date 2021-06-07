@@ -1,0 +1,248 @@
+= project1
+Généré avec Bonita
+v7.11.5, {docdate}
+:toc: left
+:toc-title: Table des matières
+:toclevels: 2
+:bonita-version: 7.11
+:imagesdir: ./documentation/images
+:icons: font
+:sectnums: numbered
+:sectanchors:
+:hardbreaks:
+:experimental:
+
+== Modèle de Données Métier
+
+////
+Installez graphviz pour bénéficier de la génération de diagrammes plantuml.
+Visitez https://graphviz.org/download/ pour plus d'informations.
+////
+
+=== Package com.mochi.commande
+
+==== CC
+
+_Aucune description disponible_
+
+===== icon:list[] Attributs
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Nom                                |Type          |Description
+|[[CC.persistenceId]]persistenceId* |Long          |           
+|[[CC.qteChoco]]qteChoco            |Integer       |           
+|[[CC.qteCoco]]qteCoco              |Integer       |           
+|[[CC.qteVanille]]qteVanille        |Integer       |           
+|[[CC.dateHeureRecup]]dateHeureRecup|OffsetDateTime|           
+|[[CC.emailClient]]emailClient      |String        |           
+|[[CC.telClient]]telClient          |String        |           
+|[[CC.lieuRecup]]lieuRecup          |String        |           
+|===
+
+== Processus
+
+=== image:icons/Pool.png[title="Processus"] [[_f4061219-2c88-3fb9-bde8-e733817e39e2]]Vente Mochi (1.0)
+
+vente des mochi/glaces
+
+
+image::processes/Vente Mochi-1.0.png[]
+
+==== icon:users[] Acteurs
+
+[grid=cols,options="header",cols="1,3a",stripes=even,frame=topbot]
+|===
+|Nom                                                                                                      |Description                                                        
+|[[_720665b3-1aeb-3bab-ac0f-071c88a7b546]]Employee actor icon:play-circle[title="Initiateur du processus"]|Ceci est un exemple d'acteur associé à tous les utilisateurs d'ACME
+|===
+
+==== Formulaire d'instanciation
+
+===== [[_60bb175d-ae03-3557-9340-d123abc55b76]]image:icons/page.png[] formSaisiMochi
+
+Page generated with Bonita UI designer
+
+.Widgets
+[caption=,grid=cols,options="header",cols="1,2,4a",stripes=even,frame=topbot]
+|===
+|Type          |Libellé                   |Description
+|Title         |                          |           
+|Input         |Qte Choco                 |           
+|Input         |Qte Coco                  |           
+|Input         |Qte Vanille               |           
+|DateTimePicker|Date Heure de récupération|           
+|Input         |Lieu de récupération      |           
+|Input         |Email Client              |           
+|Input         |Tel Client                |           
+|Button        |Submit                    |           
+|Text          |Default label             |           
+|Text          |                          |           
+|===
+
+==== icon:list-alt[] Inputs du contrat
+
+[verse]
+{
+    qteVanille ([olive]_Integer_),
+    qteChoco ([olive]_Integer_),
+    qteCoco ([olive]_Integer_),
+    dateHeureRecup ([olive]_Offsetdatetime_),
+    emailClient ([olive]_Text_),
+    telClient ([olive]_Text_),
+    lieuRecup ([olive]_Text_)
+}
+
+==== image:icons/Lane.png[title="Lane"] Employé (lane) (<<_720665b3-1aeb-3bab-ac0f-071c88a7b546,icon:user[title="Acteur"] Employee actor>>)
+
+_Aucune description disponible_
+
+==== [[_99c8d5ca-7fbf-3f21-aae6-56308e95bb68]]image:icons/StartEvent.png[title="StartEvent"] Démarrer1
+
+_Aucune description disponible_
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_e8cdc39e-a239-31e6-950f-3bf4f9036ede,envoiEmailCuisinier>>*
+
+==== [[_e8cdc39e-a239-31e6-950f-3bf4f9036ede]]image:icons/ServiceTask.png[title="ServiceTask"] envoiEmailCuisinier
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_99c8d5ca-7fbf-3f21-aae6-56308e95bb68,Démarrer1>>
+
+===== icon:plug[] Connecteurs en sortie
+
+*Courriel: envoieEmail*
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_63fed123-c289-3e0a-98a8-d2a6d41c154b,confirmationCommande>>*
+
+==== [[_63fed123-c289-3e0a-98a8-d2a6d41c154b]]image:icons/Task.png[title="Task"] confirmationCommande
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_e8cdc39e-a239-31e6-950f-3bf4f9036ede,envoiEmailCuisinier>>, <<_7934620d-b1a5-3705-94ff-a81533735cba,envoiEmailConfirmation>>
+
+===== [[_2ca12b64-aa06-3e7a-9981-9abedbfa6d77]]image:icons/page.png[] formConfirmMochi
+
+Page generated with Bonita UI designer
+
+.Widgets
+[caption=,grid=cols,options="header",cols="1,2,4a",stripes=even,frame=topbot]
+|===
+|Type          |Libellé                         |Description
+|Title         |                                |           
+|Input         |Qte Choco                       |           
+|Input         |Qte Coco                        |           
+|Input         |Qte Vanille                     |           
+|DateTimePicker|Date Heure de récupération      |           
+|Input         |Lieu de récupération            |           
+|Input         |Email Client                    |           
+|Input         |Tel Client                      |           
+|Textarea      |Commentaire                     |           
+|Button        |Changement livraison à confirmer|           
+|Button        |Commande confirmé               |           
+|Text          |Default label                   |           
+|Text          |                                |           
+|===
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_1049c2e9-571e-3f44-a17b-c29d6c232705,checkSiModifié>>*
+
+==== [[_1049c2e9-571e-3f44-a17b-c29d6c232705]]image:icons/XORGateway.png[title="XORGateway"] checkSiModifié
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_63fed123-c289-3e0a-98a8-d2a6d41c154b,confirmationCommande>>
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+Commande OK: Vers <<_703b20e1-094a-339b-bd38-c108cc127875,Fin1>>::
++
+.Quand:
+[source,groovy]
+----
+commandeConfirme
+----
+
+*Commande modifié: Vers <<_7934620d-b1a5-3705-94ff-a81533735cba,envoiEmailConfirmation>> (par défaut)*
+
+==== [[_7934620d-b1a5-3705-94ff-a81533735cba]]image:icons/ServiceTask.png[title="ServiceTask"] envoiEmailConfirmation
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_1049c2e9-571e-3f44-a17b-c29d6c232705,checkSiModifié>>
+
+===== icon:plug[] Connecteurs en sortie
+
+*Courriel: envoiEmailConfirmation*
+
+===== icon:arrow-right[] Transition(s) sortante(s)
+
+*Vers <<_63fed123-c289-3e0a-98a8-d2a6d41c154b,confirmationCommande>>*
+
+==== [[_703b20e1-094a-339b-bd38-c108cc127875]]image:icons/EndEvent.png[title="EndEvent"] Fin1
+
+_Aucune description disponible_
+
+*Élément(s) précédent*: <<_1049c2e9-571e-3f44-a17b-c29d6c232705,checkSiModifié>>
+
+== Diagrammes
+
+=== MonDiagramme (1.0)
+
+_Aucune description disponible_
+
+image::diagrams/MonDiagramme-1.0.png[]
+
+== Organization
+
+=== Groupes
+
+////
+Installez graphviz pour bénéficier de la génération de diagrammes plantuml.
+Visitez https://graphviz.org/download/ pour plus d'informations.
+////
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Chemin d'accès           |Nom métier            |Description                                                                         
+|/acme                    |Acme                  |This group represents the acme department of the ACME organization                  
+|/acme/hr                 |Human Resources       |This group represents the human resources department of the ACME organization       
+|/acme/finance            |Finance               |This group represents the finance department of the ACME organization               
+|/acme/it                 |Infrastructure        |This group represents the infrastructure department of the ACME organization        
+|/acme/marketing          |Marketing             |This group represents the marketing department of the ACME organization             
+|/acme/production         |Production            |This group represents the production department of the ACME organization            
+|/acme/production/rd      |Research & Development|This group represents the research & development department of the ACME organization
+|/acme/production/services|Services              |This group represents the services department of the ACME organization              
+|/acme/sales              |Sales                 |This group represents the sales department of the ACME organization                 
+|/acme/sales/europe       |Europe                |This group represents the europe department of the ACME organization                
+|/acme/sales/asia         |Asia                  |This group represents the asia department of the ACME organization                  
+|/acme/sales/latin_america|Latin America         |This group represents the latin america department of the ACME organization         
+|/acme/sales/north_america|North America         |This group represents the north america department of the ACME organization         
+|===
+
+=== Rôles
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Nom   |Nom métier|Description
+|member|Member    |           
+|===
+
+=== Profils
+
+[grid=cols,options="header",cols="1e,3a",stripes=even,frame=topbot]
+|===
+|Nom                                                     |Description                                                                                                                 
+|[[_1300bb05-3afe-3c2d-af8b-543b4fb16c32]]User           |The user can view and perform tasks and can start a new case of a
+process.                                                  
+|[[_080d4ce6-9f34-37f2-a270-2edb021a60ec]]Administrator  |The administrator can install a process, manage the organization, and
+handle some errors (for example, by replaying a task).
+|[[_ec4b68ef-adbc-302e-8811-94d9a8fc9032]]Process manager|The Process manager can supervise designated processes, and manage
+cases and tasks of those processes.                      
+|===
+
