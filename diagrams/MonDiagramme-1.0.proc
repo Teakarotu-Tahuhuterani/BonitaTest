@@ -462,7 +462,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_Daxz6MMUEeuQQpRvYUPAQQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_Daxz58MUEeuQQpRvYUPAQQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:InclusiveGateway" xmi:id="__2Kg0MMXEeuQQpRvYUPAQQ" name="Porte1" outgoing="_BcuO8MMYEeuQQpRvYUPAQQ _bpJoIMMvEeuQQpRvYUPAQQ _2YXw4MM8EeuQQpRvYUPAQQ _uEPEAMe8EeuzrN9yXarX7A" incoming="_d7WmAMfqEeuZEpHweUdovw">
+        <elements xmi:type="process:InclusiveGateway" xmi:id="__2Kg0MMXEeuQQpRvYUPAQQ" name="Porte1" outgoing="_BcuO8MMYEeuQQpRvYUPAQQ _bpJoIMMvEeuQQpRvYUPAQQ _2YXw4MM8EeuQQpRvYUPAQQ _uEPEAMe8EeuzrN9yXarX7A" incoming="_952jsMh-Eeua3-EacDblIQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="__2LH4cMXEeuQQpRvYUPAQQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="__2LH4MMXEeuQQpRvYUPAQQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="__2LH4sMXEeuQQpRvYUPAQQ" name="" content="" returnTypeFixed="true"/>
@@ -482,7 +482,7 @@
           <contract xmi:type="process:Contract" xmi:id="_F4a-OMMYEeuQQpRvYUPAQQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_F4a-O8MYEeuQQpRvYUPAQQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_j3m3UMMvEeuQQpRvYUPAQQ" documentation="coco" name="Fabrication Mochi Coco" outgoing="_LzgIoMMwEeuQQpRvYUPAQQ" incoming="_bpJoIMMvEeuQQpRvYUPAQQ" actor="_6m33cMe3EeuzrN9yXarX7A">
+        <elements xmi:type="process:Task" xmi:id="_j3m3UMMvEeuQQpRvYUPAQQ" documentation="coco" name="Fabrication Mochi Coco" outgoing="_LzgIoMMwEeuQQpRvYUPAQQ" incoming="_7mKIIMiREeuNUfSi0PffkA _L6WLgMiWEeuNUfSi0PffkA" actor="_6m33cMe3EeuzrN9yXarX7A">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Wu4GgcMvEeuQQpRvYUPAQQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Wu4GgMMvEeuQQpRvYUPAQQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Wu4GgsMvEeuQQpRvYUPAQQ" name="" content="" returnTypeFixed="true"/>
@@ -512,7 +512,7 @@
           <contract xmi:type="process:Contract" xmi:id="_o4k22MMvEeuQQpRvYUPAQQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_o4k228MvEeuQQpRvYUPAQQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:InclusiveGateway" xmi:id="_JmznkMMwEeuQQpRvYUPAQQ" name="Porte2" outgoing="_N66hEMMwEeuQQpRvYUPAQQ" incoming="_LZEPYMMwEeuQQpRvYUPAQQ _LzgIoMMwEeuQQpRvYUPAQQ _MSE7AMMwEeuQQpRvYUPAQQ _2YXw4MM8EeuQQpRvYUPAQQ">
+        <elements xmi:type="process:InclusiveGateway" xmi:id="_JmznkMMwEeuQQpRvYUPAQQ" name="Porte2" outgoing="_N66hEMMwEeuQQpRvYUPAQQ" incoming="_LzgIoMMwEeuQQpRvYUPAQQ _MSE7AMMwEeuQQpRvYUPAQQ _2YXw4MM8EeuQQpRvYUPAQQ _5HEPgMiREeuNUfSi0PffkA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Jm0OocMwEeuQQpRvYUPAQQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Jm0OoMMwEeuQQpRvYUPAQQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Jm0OosMwEeuQQpRvYUPAQQ" name="" content="" returnTypeFixed="true"/>
@@ -821,6 +821,86 @@
           <calledActivityName xmi:type="expression:Expression" xmi:id="_I63BBMflEeuZEpHweUdovw" name="Historique Client" content="Historique Client" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_I63BBcflEeuZEpHweUdovw" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
+        <elements xmi:type="process:ServiceTask" xmi:id="_95EgkMh-Eeua3-EacDblIQ" name="Etape initialisateur variables" outgoing="_952jsMh-Eeua3-EacDblIQ" incoming="_d7WmAMfqEeuZEpHweUdovw">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_95Qt0ch-Eeua3-EacDblIQ" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_95Qt0Mh-Eeua3-EacDblIQ" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_95Qt0sh-Eeua3-EacDblIQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_DKyR0Mh_Eeua3-EacDblIQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_DKyR0ch_Eeua3-EacDblIQ" name="commandeMochi" content="commandeMochi" type="TYPE_VARIABLE" returnType="com.mochi.commande.CC">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FcwUcMh_Eeua3-EacDblIQ" name="commandeMochi" dataType="_m-1HNMJrEeuHpc1qXUEmxQ" className="com.mochi.commande.CC"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_DKyR0sh_Eeua3-EacDblIQ" name="newScript()" content="return &quot;{\&quot;choco\&quot;:\&quot;Description choco\&quot;, \&quot;coco\&quot;:\&quot;Description coco\&quot;, \&quot;vanille\&quot;:\&quot;Description vanille\&quot;, \&quot;testVariable\&quot;:\&quot;&quot;+commandeConfirme.toString()+&quot;\&quot;}&quot;;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:Data" xmi:id="_5OcuEMiKEeua3-EacDblIQ" name="commandeConfirme" dataType="_m-1HLMJrEeuHpc1qXUEmxQ"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_DKyR08h_Eeua3-EacDblIQ" type="JAVA_METHOD" expression="setTmp">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <loopCondition xmi:type="expression:Expression" xmi:id="_95Qt08h-Eeua3-EacDblIQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <loopMaximum xmi:type="expression:Expression" xmi:id="_95Qt1Mh-Eeua3-EacDblIQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_95Qt1ch-Eeua3-EacDblIQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_95Qt18h-Eeua3-EacDblIQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_95Qt1sh-Eeua3-EacDblIQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:ServiceTask" xmi:id="_5GN68MiREeuNUfSi0PffkA" name="envoie message confirmation" outgoing="_5HEPgMiREeuNUfSi0PffkA" incoming="_LZEPYMMwEeuQQpRvYUPAQQ">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_5GeZociREeuNUfSi0PffkA" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_5GeZoMiREeuNUfSi0PffkA" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_5GeZosiREeuNUfSi0PffkA" name="" content="" returnTypeFixed="true"/>
+          <data xmi:type="process:Data" xmi:id="_K2YJ4MiSEeuNUfSi0PffkA" name="var" dataType="_m-1HMcJrEeuHpc1qXUEmxQ">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_K2YJ4ciSEeuNUfSi0PffkA" content=""/>
+          </data>
+          <connectors xmi:type="process:Connector" xmi:id="_LNPxwMiSEeuNUfSi0PffkA" name="envoiMessageConfirmation" definitionId="scripting-groovy-script" event="ON_FINISH" ignoreErrors="true" definitionVersion="1.0.1">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_LNPxwciSEeuNUfSi0PffkA" definitionId="scripting-groovy-script" version="1.0.1" modelVersion="7.11.1-001">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_LNPxwsiSEeuNUfSi0PffkA" key="script">
+                <expression xmi:type="expression:Expression" xmi:id="_LNPxw8iSEeuNUfSi0PffkA" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_LNPxxMiSEeuNUfSi0PffkA" key="variables"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_LNPxxciSEeuNUfSi0PffkA" key="fakeScriptExpression">
+                <expression xmi:type="expression:Expression" xmi:id="_LNPxxsiSEeuNUfSi0PffkA" name="groovyScriptEnvoiMessageConfirmation" content="import org.bonitasoft.engine.api.ProcessAPI&#xD;&#xA;import org.bonitasoft.engine.expression.Expression&#xD;&#xA;import org.bonitasoft.engine.expression.ExpressionBuilder&#xD;&#xA;import java.util.logging.Logger&#xD;&#xA;&#xD;&#xA;ProcessAPI processAPI = apiAccessor.getProcessAPI();&#xD;&#xA;Expression targetProcess = new ExpressionBuilder().createConstantStringExpression(&quot;Vente Mochi&quot;);&#xD;&#xA;Expression targetFlowNode = new ExpressionBuilder().createConstantStringExpression(&quot;attente message confirmation choco&quot;);&#xD;&#xA;Map&lt;Expression, Expression> messageContent = new HashMap&lt;String,Expression>();&#xD;&#xA;&#xD;&#xA;// correlation&#xD;&#xA;Expression exprName = new ExpressionBuilder().createConstantStringExpression(&quot;idDemande&quot;);&#xD;&#xA;Expression exprValue = new ExpressionBuilder().createConstantStringExpression(String.valueOf(processInstanceId) );&#xD;&#xA;Map&lt;Expression, Expression> correlations = new HashMap&lt;String,Expression>();&#xD;&#xA;correlations.put(exprName, exprValue);&#xD;&#xA;&#xD;&#xA;// send the message&#xD;&#xA;processAPI.sendMessage(&quot;TIF&quot;, targetProcess, targetFlowNode, messageContent, correlations);&#xD;&#xA;&#xD;&#xA;Logger logger = Logger.getLogger(&quot;org.bonitasoft.envoimsg&quot;)&#xD;&#xA;logger.info( &quot;Envoi TIF : |liaison TE ATA 2 ou LLO fibre dédiée| - |Attente Fin Travaux Infra| : &quot;+ String.valueOf(processInstanceId) );&#xD;&#xA;&#xD;&#xA;return String.valueOf(processInstanceId);&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_LNPxx8iSEeuNUfSi0PffkA" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_LNPxyMiSEeuNUfSi0PffkA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="com.bonitasoft.engine.api.APIAccessor"/>
+                </expression>
+              </parameters>
+            </configuration>
+            <outputs xmi:type="expression:Operation" xmi:id="_LNPxyciSEeuNUfSi0PffkA">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_LNPxysiSEeuNUfSi0PffkA" name="var" content="var" type="TYPE_VARIABLE">
+                <referencedElements xmi:type="process:Data" xmi:id="_LNPxy8iSEeuNUfSi0PffkA" name="var" dataType="_m-1HMcJrEeuHpc1qXUEmxQ"/>
+              </leftOperand>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_LNPxzMiSEeuNUfSi0PffkA" name="result" content="result" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
+                <referencedElements xmi:type="definition:Output" xmi:id="_LNPxzciSEeuNUfSi0PffkA" name="result" type="java.lang.Object"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_LNPxzsiSEeuNUfSi0PffkA" type="ASSIGNMENT"/>
+            </outputs>
+          </connectors>
+          <loopCondition xmi:type="expression:Expression" xmi:id="_5GeZo8iREeuNUfSi0PffkA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <loopMaximum xmi:type="expression:Expression" xmi:id="_5GeZpMiREeuNUfSi0PffkA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_5GeZpciREeuNUfSi0PffkA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_5GfAsMiREeuNUfSi0PffkA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_5GeZpsiREeuNUfSi0PffkA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:ReceiveTask" xmi:id="_7lwfgMiREeuNUfSi0PffkA" name="attente message confirmation choco" outgoing="_7mKIIMiREeuNUfSi0PffkA" incoming="_J4wuQMiWEeuNUfSi0PffkA" event="TIF">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_7lwfgsiREeuNUfSi0PffkA" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_7lwfgciREeuNUfSi0PffkA" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_7lwfg8iREeuNUfSi0PffkA" name="" content="" returnTypeFixed="true"/>
+          <loopCondition xmi:type="expression:Expression" xmi:id="_7lwfhMiREeuNUfSi0PffkA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <loopMaximum xmi:type="expression:Expression" xmi:id="_7lwfhciREeuNUfSi0PffkA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_7lwfhsiREeuNUfSi0PffkA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_7lwfiMiREeuNUfSi0PffkA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_7lwfh8iREeuNUfSi0PffkA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <correlation xmi:type="expression:TableExpression" xmi:id="_URMCAMiTEeuNUfSi0PffkA">
+            <expressions xmi:type="expression:ListExpression" xmi:id="_UiyIUMiTEeuNUfSi0PffkA">
+              <expressions xmi:type="expression:Expression" xmi:id="_UiyIUciTEeuNUfSi0PffkA" name="idDemande" content="idDemande"/>
+              <expressions xmi:type="expression:Expression" xmi:id="_UiyIUsiTEeuNUfSi0PffkA" name="newScript()" content="return processInstanceId.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                <referencedElements xmi:type="expression:Expression" xmi:id="_mq-cwMiTEeuNUfSi0PffkA" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+              </expressions>
+            </expressions>
+          </correlation>
+        </elements>
+        <elements xmi:type="process:XORGateway" xmi:id="_J4clMMiWEeuNUfSi0PffkA" name="Porte3" outgoing="_J4wuQMiWEeuNUfSi0PffkA _L6WLgMiWEeuNUfSi0PffkA" incoming="_bpJoIMMvEeuQQpRvYUPAQQ">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_J4iEwciWEeuNUfSi0PffkA" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_J4iEwMiWEeuNUfSi0PffkA" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_J4iEwsiWEeuNUfSi0PffkA" name="" content="" returnTypeFixed="true"/>
+        </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_hsHhIMJ0EeuHpc1qXUEmxQ" name="commandeMochi" dataType="_m-1HNMJrEeuHpc1qXUEmxQ" className="com.mochi.commande.CC">
         <defaultValue xmi:type="expression:Expression" xmi:id="_hsMZoMJ0EeuHpc1qXUEmxQ" name="init_commandeMochi()" content="import com.mochi.commande.CC;&#xD;&#xA;&#xD;&#xA;CC comMochi = new CC();&#xD;&#xA;comMochi.qteChoco = qteChoco;&#xD;&#xA;comMochi.qteCoco = qteCoco;&#xD;&#xA;comMochi.qteVanille = qteVanille;&#xD;&#xA;comMochi.dateHeureRecup = dateHeureRecup;&#xD;&#xA;comMochi.emailClient = emailClient;&#xD;&#xA;comMochi.telClient = telClient;&#xD;&#xA;comMochi.lieuRecup = lieuRecup;&#xD;&#xA;comMochi.nomClient = nomClient;&#xD;&#xA;&#xD;&#xA;return comMochi;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.mochi.commande.CC">
@@ -884,16 +964,16 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_BcuO8MMYEeuQQpRvYUPAQQ" target="_F4aXIMMYEeuQQpRvYUPAQQ" source="__2Kg0MMXEeuQQpRvYUPAQQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_BcuO8cMYEeuQQpRvYUPAQQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_BcuO8sMYEeuQQpRvYUPAQQ" name="getQteChoco()" content="return commandeMochi.getQteChoco() > 0;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_7Kx6UMMYEeuQQpRvYUPAQQ" name="commandeMochi" dataType="_m-1HNMJrEeuHpc1qXUEmxQ" className="com.mochi.commande.CC"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_rLygEMiUEeuNUfSi0PffkA" name="commandeMochi" dataType="_m-1HNMJrEeuHpc1qXUEmxQ" className="com.mochi.commande.CC"/>
         </condition>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_bpJoIMMvEeuQQpRvYUPAQQ" target="_j3m3UMMvEeuQQpRvYUPAQQ" source="__2Kg0MMXEeuQQpRvYUPAQQ">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_bpJoIMMvEeuQQpRvYUPAQQ" target="_J4clMMiWEeuNUfSi0PffkA" source="__2Kg0MMXEeuQQpRvYUPAQQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_bpJoIcMvEeuQQpRvYUPAQQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_bpJoIsMvEeuQQpRvYUPAQQ" name="getCoco()" content="return commandeMochi.getQteCoco() > 0;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wxlBIMM0EeuQQpRvYUPAQQ" name="commandeMochi" dataType="_m-1HNMJrEeuHpc1qXUEmxQ" className="com.mochi.commande.CC"/>
+        <condition xmi:type="expression:Expression" xmi:id="_bpJoIsMvEeuQQpRvYUPAQQ" name="getCoco()" content="if (commandeMochi.getQteChoco() > 0 &amp;&amp; commandeMochi.getQteCoco() > 0){&#xD;&#xA;&#x9;return true;&#xD;&#xA;}else{&#xD;&#xA;&#x9;return false;&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UYNlIMiVEeuNUfSi0PffkA" name="commandeMochi" dataType="_m-1HNMJrEeuHpc1qXUEmxQ" className="com.mochi.commande.CC"/>
         </condition>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_LZEPYMMwEeuQQpRvYUPAQQ" target="_JmznkMMwEeuQQpRvYUPAQQ" source="_F4aXIMMYEeuQQpRvYUPAQQ">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_LZEPYMMwEeuQQpRvYUPAQQ" target="_5GN68MiREeuNUfSi0PffkA" source="_F4aXIMMYEeuQQpRvYUPAQQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_LZEPYcMwEeuQQpRvYUPAQQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_LZEPYsMwEeuQQpRvYUPAQQ" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
@@ -980,9 +1060,31 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_c4D9AcfqEeuZEpHweUdovw"/>
         <condition xmi:type="expression:Expression" xmi:id="_c4D9AsfqEeuZEpHweUdovw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_d7WmAMfqEeuZEpHweUdovw" target="__2Kg0MMXEeuQQpRvYUPAQQ" source="_I63BAMflEeuZEpHweUdovw">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_d7WmAMfqEeuZEpHweUdovw" target="_95EgkMh-Eeua3-EacDblIQ" source="_I63BAMflEeuZEpHweUdovw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_d7WmAcfqEeuZEpHweUdovw"/>
         <condition xmi:type="expression:Expression" xmi:id="_d7WmAsfqEeuZEpHweUdovw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_952jsMh-Eeua3-EacDblIQ" target="__2Kg0MMXEeuQQpRvYUPAQQ" source="_95EgkMh-Eeua3-EacDblIQ">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_953KwMh-Eeua3-EacDblIQ"/>
+        <condition xmi:type="expression:Expression" xmi:id="_953Kwch-Eeua3-EacDblIQ" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_5HEPgMiREeuNUfSi0PffkA" target="_JmznkMMwEeuQQpRvYUPAQQ" source="_5GN68MiREeuNUfSi0PffkA">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_5HE2kMiREeuNUfSi0PffkA"/>
+        <condition xmi:type="expression:Expression" xmi:id="_5HE2kciREeuNUfSi0PffkA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_7mKIIMiREeuNUfSi0PffkA" target="_j3m3UMMvEeuQQpRvYUPAQQ" source="_7lwfgMiREeuNUfSi0PffkA">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_7mKIIciREeuNUfSi0PffkA"/>
+        <condition xmi:type="expression:Expression" xmi:id="_7mKIIsiREeuNUfSi0PffkA" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_J4wuQMiWEeuNUfSi0PffkA" name="si mochi choco et mochi coco" target="_7lwfgMiREeuNUfSi0PffkA" source="_J4clMMiWEeuNUfSi0PffkA">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_J4wuQciWEeuNUfSi0PffkA"/>
+        <condition xmi:type="expression:Expression" xmi:id="_J4wuQsiWEeuNUfSi0PffkA" name="newScript()" content="if(commandeMochi.getQteChoco() > 0){&#xD;&#xA;&#x9;return true;&#xD;&#xA;}else{&#xD;&#xA;&#x9;return false;&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UF7F0MiWEeuNUfSi0PffkA" name="commandeMochi" dataType="_m-1HNMJrEeuHpc1qXUEmxQ" className="com.mochi.commande.CC"/>
+        </condition>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_L6WLgMiWEeuNUfSi0PffkA" name="si pas de mochi choco" target="_j3m3UMMvEeuQQpRvYUPAQQ" source="_J4clMMiWEeuNUfSi0PffkA" isDefault="true">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_L6WLgciWEeuNUfSi0PffkA"/>
+        <condition xmi:type="expression:Expression" xmi:id="_L6WLgsiWEeuNUfSi0PffkA" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_m-1HG8JrEeuHpc1qXUEmxQ" documentation="Ceci est un exemple d'acteur associé à tous les utilisateurs d'ACME" name="Employee actor" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_36phwMe3EeuzrN9yXarX7A" name="Client"/>
@@ -1188,7 +1290,7 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_mGI1YMJ0EeuHpc1qXUEmxQ" type="5025">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_mGI1YcJ0EeuHpc1qXUEmxQ" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mGIOUcJ0EeuHpc1qXUEmxQ" x="1166" y="378"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mGIOUcJ0EeuHpc1qXUEmxQ" x="1362" y="378"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_DI37oMMAEeuQQpRvYUPAQQ" type="3005" element="_DI2tgMMAEeuQQpRvYUPAQQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_DI37osMAEeuQQpRvYUPAQQ" type="5005"/>
@@ -1216,25 +1318,25 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_F4a-PMMYEeuQQpRvYUPAQQ" type="3005" element="_F4aXIMMYEeuQQpRvYUPAQQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_F4a-PsMYEeuQQpRvYUPAQQ" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F4a-PcMYEeuQQpRvYUPAQQ" x="1118" y="35" width="126" height="63"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F4a-PcMYEeuQQpRvYUPAQQ" x="1190" y="34" width="126" height="63"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_j3oFc8MvEeuQQpRvYUPAQQ" type="3005" element="_j3m3UMMvEeuQQpRvYUPAQQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_j3osgMMvEeuQQpRvYUPAQQ" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j3oFdMMvEeuQQpRvYUPAQQ" x="1122" y="130" width="119" height="59"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j3oFdMMvEeuQQpRvYUPAQQ" x="1318" y="130" width="119" height="59"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_o4ld4MMvEeuQQpRvYUPAQQ" type="3005" element="_o4kPwMMvEeuQQpRvYUPAQQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_o4ld4sMvEeuQQpRvYUPAQQ" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o4ld4cMvEeuQQpRvYUPAQQ" x="1122" y="226" width="119" height="59"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o4ld4cMvEeuQQpRvYUPAQQ" x="1318" y="226" width="119" height="59"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_Jm01sMMwEeuQQpRvYUPAQQ" type="3051" element="_JmznkMMwEeuQQpRvYUPAQQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_Jm1cwMMwEeuQQpRvYUPAQQ" type="5075">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm1cwcMwEeuQQpRvYUPAQQ" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Jm01scMwEeuQQpRvYUPAQQ" x="1276" y="65"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Jm01scMwEeuQQpRvYUPAQQ" x="1472" y="65"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_37BJCcM0EeuQQpRvYUPAQQ" type="3005" element="_368QgMM0EeuQQpRvYUPAQQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_37BJC8M0EeuQQpRvYUPAQQ" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_37BJCsM0EeuQQpRvYUPAQQ" x="1382" y="130" width="119" height="59"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_37BJCsM0EeuQQpRvYUPAQQ" x="1578" y="130" width="119" height="59"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_vJ9iGcM_EeuQQpRvYUPAQQ" type="3027" element="_vJ9iEMM_EeuQQpRvYUPAQQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_vJ9iG8M_EeuQQpRvYUPAQQ" type="5017"/>
@@ -1242,7 +1344,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_VCRQ0Me7EeuzrN9yXarX7A" type="3027" element="_VCMYUMe7EeuzrN9yXarX7A" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_VCRQ0se7EeuzrN9yXarX7A" type="5017"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VCRQ0ce7EeuzrN9yXarX7A" x="1264" y="354" width="119" height="59"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VCRQ0ce7EeuzrN9yXarX7A" x="1460" y="354" width="119" height="59"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_-8bdQcfJEeuZEpHweUdovw" type="3005" element="_-8aPIMfJEeuZEpHweUdovw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_-8cEUMfJEeuZEpHweUdovw" type="5005"/>
@@ -1252,7 +1354,7 @@
                 </children>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DtxsYcfKEeuZEpHweUdovw"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-8bdQsfJEeuZEpHweUdovw" x="1390" y="258" width="100" height="49"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-8bdQsfJEeuZEpHweUdovw" x="1586" y="258" width="100" height="49"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_iw7CEMfPEeuZEpHweUdovw" type="3009" element="_iw4l0MfPEeuZEpHweUdovw" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_iw7CEsfPEeuZEpHweUdovw" type="5020">
@@ -1278,6 +1380,24 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_I69HosflEeuZEpHweUdovw" type="5093"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I69HocflEeuZEpHweUdovw" x="782" y="226" width="158" height="79"/>
             </children>
+            <children xmi:type="notation:Shape" xmi:id="_95fXUMh-Eeua3-EacDblIQ" type="3027" element="_95EgkMh-Eeua3-EacDblIQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_95f-YMh-Eeua3-EacDblIQ" type="5017"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_95fXUch-Eeua3-EacDblIQ" x="869" y="137" width="152" height="74"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_5GtqMMiREeuNUfSi0PffkA" type="3027" element="_5GN68MiREeuNUfSi0PffkA" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_5GuRQMiREeuNUfSi0PffkA" type="5017"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5GtqMciREeuNUfSi0PffkA" x="1354" y="37"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_7l1YAMiREeuNUfSi0PffkA" type="3026" element="_7lwfgMiREeuNUfSi0PffkA" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_7l1YAsiREeuNUfSi0PffkA" type="5012"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7l1YAciREeuNUfSi0PffkA" x="1193" y="136"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_J4m9QMiWEeuNUfSi0PffkA" type="3008" element="_J4clMMiWEeuNUfSi0PffkA" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_J4m9QsiWEeuNUfSi0PffkA" type="5026">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_J4m9Q8iWEeuNUfSi0PffkA" y="5"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J4m9QciWEeuNUfSi0PffkA" x="1106" y="137"/>
+            </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_m-1HQ8JrEeuHpc1qXUEmxQ"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_m-1HRMJrEeuHpc1qXUEmxQ" fontName="Segoe UI"/>
@@ -1290,7 +1410,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_m-5_gsJrEeuHpc1qXUEmxQ" fontName="Segoe UI"/>
       <styles xmi:type="notation:LineStyle" xmi:id="_m-5_g8JrEeuHpc1qXUEmxQ"/>
       <styles xmi:type="notation:FillStyle" xmi:id="_m-5_hMJrEeuHpc1qXUEmxQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m-5_hcJrEeuHpc1qXUEmxQ" width="1727" height="250"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m-5_hcJrEeuHpc1qXUEmxQ" width="1796" height="250"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_Vp5KZMfjEeuZEpHweUdovw" type="2007" element="_Vm45oMfjEeuZEpHweUdovw">
       <children xmi:type="notation:DecorationNode" xmi:id="_Vp5KacfjEeuZEpHweUdovw" type="5008"/>
@@ -1371,23 +1491,21 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Bcu2AsMYEeuQQpRvYUPAQQ" points="[0, 5, -168, 24]$[57, 5, -111, 24]$[57, -23, -111, -4]$[105, -23, -63, -4]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eh6_gMNEEeuQQpRvYUPAQQ" id="(0.9069767441860465,0.3023255813953488)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_bpK2QMMvEeuQQpRvYUPAQQ" type="4001" element="_bpJoIMMvEeuQQpRvYUPAQQ" source="__2NkIMMXEeuQQpRvYUPAQQ" target="_j3oFc8MvEeuQQpRvYUPAQQ" roundedBendpointsRadius="10" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_bpK2QMMvEeuQQpRvYUPAQQ" type="4001" element="_bpJoIMMvEeuQQpRvYUPAQQ" source="__2NkIMMXEeuQQpRvYUPAQQ" target="_J4m9QMiWEeuNUfSi0PffkA" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_bpLdUMMvEeuQQpRvYUPAQQ" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_bpLdUcMvEeuQQpRvYUPAQQ" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_bpK2QcMvEeuQQpRvYUPAQQ" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bpK2QsMvEeuQQpRvYUPAQQ" points="[-3, -9, -108, -70]$[53, -9, -52, -70]$[53, 58, -52, -3]$[105, 58, 0, -3]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bpK2QsMvEeuQQpRvYUPAQQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bpMEYMMvEeuQQpRvYUPAQQ" id="(1.0,0.6511627906976745)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bpMrcMMvEeuQQpRvYUPAQQ" id="(0.0,0.54)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_LZE2cMMwEeuQQpRvYUPAQQ" type="4001" element="_LZEPYMMwEeuQQpRvYUPAQQ" source="_F4a-PMMYEeuQQpRvYUPAQQ" target="_Jm01sMMwEeuQQpRvYUPAQQ" roundedBendpointsRadius="10" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_LZE2cMMwEeuQQpRvYUPAQQ" type="4001" element="_LZEPYMMwEeuQQpRvYUPAQQ" source="_F4a-PMMYEeuQQpRvYUPAQQ" target="_5GtqMMiREeuNUfSi0PffkA" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_LZFdgcMwEeuQQpRvYUPAQQ" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_LZFdgsMwEeuQQpRvYUPAQQ" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_LZE2ccMwEeuQQpRvYUPAQQ" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LZFdgMMwEeuQQpRvYUPAQQ" points="[0, 0, -71, -54]$[66, 32, -5, -22]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LZFdgMMwEeuQQpRvYUPAQQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LZGroMMwEeuQQpRvYUPAQQ" id="(1.0,0.42857142857142855)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_g5ZNMMNEEeuQQpRvYUPAQQ" id="(0.0,0.4418604651162791)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_LzgvsMMwEeuQQpRvYUPAQQ" type="4001" element="_LzgIoMMwEeuQQpRvYUPAQQ" source="_j3oFc8MvEeuQQpRvYUPAQQ" target="_Jm01sMMwEeuQQpRvYUPAQQ" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_LzhWwMMwEeuQQpRvYUPAQQ" type="6001">
@@ -1452,7 +1570,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_rYelNMe4EeuzrN9yXarX7A" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_rYelMce4EeuzrN9yXarX7A" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rYelMse4EeuzrN9yXarX7A" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rYelMse4EeuzrN9yXarX7A" points="[-50, 0, 67, -100]$[-82, 0, 35, -100]$[-82, 71, 35, -29]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_VCbB08e7EeuzrN9yXarX7A" type="4001" element="_VCbB0Me7EeuzrN9yXarX7A" source="_VCRQ0Me7EeuzrN9yXarX7A" target="_mGIOUMJ0EeuHpc1qXUEmxQ" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_VCbB1se7EeuzrN9yXarX7A" type="6001">
@@ -1562,12 +1680,12 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c4I1gMfqEeuZEpHweUdovw" id="(1.0,0.5806451612903226)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c4I1gcfqEeuZEpHweUdovw" id="(0.18354430379746836,0.43037974683544306)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_d7WmA8fqEeuZEpHweUdovw" type="4001" element="_d7WmAMfqEeuZEpHweUdovw" source="_I69HoMflEeuZEpHweUdovw" target="__2NkIMMXEeuQQpRvYUPAQQ" roundedBendpointsRadius="10" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_d7WmA8fqEeuZEpHweUdovw" type="4001" element="_d7WmAMfqEeuZEpHweUdovw" source="_I69HoMflEeuZEpHweUdovw" target="_95fXUMh-Eeua3-EacDblIQ" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_d7WmBsfqEeuZEpHweUdovw" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_d7WmB8fqEeuZEpHweUdovw" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_d7WmBMfqEeuZEpHweUdovw" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d7WmBcfqEeuZEpHweUdovw" points="[0, 0, -42, 125]$[39, -112, -3, 13]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d7WmBcfqEeuZEpHweUdovw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d7begMfqEeuZEpHweUdovw" id="(1.0,0.43037974683544306)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_J6X5FsfsEeuZEpHweUdovw" type="4001" element="_J6X5E8fsEeuZEpHweUdovw" source="_J6X5EMfsEeuZEpHweUdovw" target="_LeFBIMfkEeuZEpHweUdovw" roundedBendpointsRadius="10" routing="Rectilinear">
@@ -1576,6 +1694,43 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_J6X5F8fsEeuZEpHweUdovw" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J6X5GMfsEeuZEpHweUdovw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_954Y4Mh-Eeua3-EacDblIQ" type="4001" element="_952jsMh-Eeua3-EacDblIQ" source="_95fXUMh-Eeua3-EacDblIQ" target="__2NkIMMXEeuQQpRvYUPAQQ" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_955nAMh-Eeua3-EacDblIQ" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_955nAch-Eeua3-EacDblIQ" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_954Y4ch-Eeua3-EacDblIQ" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_954Y4sh-Eeua3-EacDblIQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_5HGEsMiREeuNUfSi0PffkA" type="4001" element="_5HEPgMiREeuNUfSi0PffkA" source="_5GtqMMiREeuNUfSi0PffkA" target="_Jm01sMMwEeuQQpRvYUPAQQ" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_5HHS0MiREeuNUfSi0PffkA" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5HHS0ciREeuNUfSi0PffkA" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_5HGEsciREeuNUfSi0PffkA" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5HGEssiREeuNUfSi0PffkA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_7mPAoMiREeuNUfSi0PffkA" type="4001" element="_7mKIIMiREeuNUfSi0PffkA" source="_7l1YAMiREeuNUfSi0PffkA" target="_j3oFc8MvEeuQQpRvYUPAQQ" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_7mPAo8iREeuNUfSi0PffkA" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_7mPApMiREeuNUfSi0PffkA" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_7mPAociREeuNUfSi0PffkA" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7mPAosiREeuNUfSi0PffkA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_J4wuQ8iWEeuNUfSi0PffkA" type="4001" element="_J4wuQMiWEeuNUfSi0PffkA" source="_J4m9QMiWEeuNUfSi0PffkA" target="_7l1YAMiREeuNUfSi0PffkA" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_J4wuRsiWEeuNUfSi0PffkA" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_J4wuR8iWEeuNUfSi0PffkA" x="-3" y="-41"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_J4wuRMiWEeuNUfSi0PffkA" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J4wuRciWEeuNUfSi0PffkA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_L6v0IMiWEeuNUfSi0PffkA" type="4001" element="_L6WLgMiWEeuNUfSi0PffkA" source="_J4m9QMiWEeuNUfSi0PffkA" target="_j3oFc8MvEeuQQpRvYUPAQQ" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_L6v0I8iWEeuNUfSi0PffkA" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_L6v0JMiWEeuNUfSi0PffkA" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_L6v0IciWEeuNUfSi0PffkA" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L6v0IsiWEeuNUfSi0PffkA" points="[-22, 15, -259, 2]$[-22, 41, -259, 28]$[89, 41, -148, 28]$[89, 45, -148, 32]$[228, 45, -9, 32]$[228, 24, -9, 11]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L60soMiWEeuNUfSi0PffkA" id="(1.0,0.6511627906976745)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L61TsMiWEeuNUfSi0PffkA" id="(0.5714285714285714,0.8135593220338984)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>

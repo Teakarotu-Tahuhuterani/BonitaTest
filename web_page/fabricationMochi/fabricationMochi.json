@@ -2,7 +2,7 @@
   "designerVersion" : "1.11.62",
   "id" : "fabricationMochi",
   "name" : "fabricationMochi",
-  "lastUpdate" : 1622591433324,
+  "lastUpdate" : 1623178477006,
   "rows" : [
     [
       {
@@ -94,6 +94,33 @@
           "rows" : [
             [
               {
+                "type" : "fragment",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "0dfaf2fb-3994-43de-803c-d98bfe7894c1",
+                "hasValidationError" : false,
+                "id" : "infosClients",
+                "binding" : {
+                  "cc" : "confirmationFabrication"
+                }
+              }
+            ],
+            [
+              {
                 "type" : "component",
                 "dimension" : {
                   "md" : 12,
@@ -131,7 +158,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Quantité {{ task.displayDescription }}"
+                    "value" : "{{libelleQuantite}}"
                   },
                   "type" : {
                     "type" : "constant",
@@ -546,6 +573,13 @@
         "    }",
         "    return qte;",
         "}"
+      ],
+      "exposed" : false
+    },
+    "libelleQuantite" : {
+      "type" : "expression",
+      "value" : [
+        "return JSON.parse($data.confirmationFabrication.tmp)[$data.task.displayDescription];"
       ],
       "exposed" : false
     }
