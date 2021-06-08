@@ -1,8 +1,8 @@
 {
   "designerVersion" : "1.11.62",
-  "id" : "testForm",
-  "name" : "testForm",
-  "lastUpdate" : 1623115563211,
+  "id" : "newForm1",
+  "name" : "newForm1",
+  "lastUpdate" : 1623107080234,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "ca4cde5f-ffca-4056-9ae3-8054b6aad1f0",
+        "reference" : "bb79000e-932f-4a19-bdbc-4e775342472e",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "cc90e8f3-cd7f-44cb-b17b-fd1a6056635b",
+              "reference" : "6f6e8bac-ab0b-45c0-b4f0-b374c37b9da5",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "7ef373ec-3329-4342-a8c8-bc7236c88895",
+              "reference" : "6a23bc5e-7d6e-40b6-a957-cda9ace1a1fc",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -113,17 +113,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "fb91da2c-41bd-493e-b64b-ec72fbe4db1d",
+        "propertyValues" : { },
+        "reference" : "5a200bd1-dcc7-4424-8fa7-af03e583ccbe",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -132,82 +123,10 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "5648e710-b465-4a1a-8baa-6e4f45d25f03",
+          "reference" : "6cd89d72-3ef6-4fff-8691-f05df699c975",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
-            [
-              {
-                "type" : "fragment",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  }
-                },
-                "reference" : "494bfb7c-6e40-4e00-98cb-a1b92bdb690d",
-                "hasValidationError" : false,
-                "id" : "infosClients",
-                "binding" : {
-                  "cc" : "cc"
-                }
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Bool"
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.bool"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "7fb69d04-f512-4c55-95ae-95c5166907bb",
-                "hasValidationError" : false,
-                "id" : "pbCheckbox",
-                "description" : ""
-              }
-            ],
             [
               {
                 "type" : "component",
@@ -279,7 +198,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "1ae4d9da-2bd4-429c-ac26-16ccfdc5715d",
+                "reference" : "d131b972-be2e-49a5-bccb-02767000c4cc",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -331,7 +250,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "38fa74cf-8b39-4ae9-b056-2f2e60dc6abb",
+                "reference" : "ffe56297-b013-45d8-a94c-5aa20359f32d",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -344,14 +263,14 @@
   ],
   "assets" : [
     {
-      "id" : "3e9e8078-8149-454e-9d7c-6e83669539f9",
+      "id" : "8edadeb5-31c8-48af-9d1b-8ad88c637c6a",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "ca258c8c-8b6c-492f-94b7-348a4fb8427f",
+      "id" : "1a5e974f-f012-4f0b-b383-0c396a911c17",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -364,15 +283,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{\r",
-        "  \"bool\" : false\r",
-        "}"
       ],
       "exposed" : false
     },
@@ -395,7 +305,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tbool: $data.formInput.bool",
+        "",
         "}"
       ],
       "exposed" : false
@@ -413,17 +323,10 @@
         "id"
       ],
       "exposed" : false
-    },
-    "cc" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.commandeMochi_ref.link}}"
-      ],
-      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "e85076b9-3b7b-42b0-92db-e14098578391",
+  "uuid" : "d11cd99c-a86d-40e2-a167-96eff7dd728c",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

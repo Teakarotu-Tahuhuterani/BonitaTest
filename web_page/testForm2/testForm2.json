@@ -1,8 +1,8 @@
 {
   "designerVersion" : "1.11.62",
-  "id" : "testForm",
-  "name" : "testForm",
-  "lastUpdate" : 1623115563211,
+  "id" : "testForm2",
+  "name" : "testForm2",
+  "lastUpdate" : 1623115385553,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "ca4cde5f-ffca-4056-9ae3-8054b6aad1f0",
+        "reference" : "0e20233a-e8e4-41d0-a27f-1b3b2c8c776a",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "cc90e8f3-cd7f-44cb-b17b-fd1a6056635b",
+              "reference" : "d41bddc0-e804-4beb-af4d-97b3aadcf81e",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,13 +98,140 @@
                   "value" : 12
                 }
               },
-              "reference" : "7ef373ec-3329-4342-a8c8-bc7236c88895",
+              "reference" : "f96bc7e3-c46c-4d05-af85-f41d03dd71c6",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
             }
           ]
         ]
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 9,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "headers" : {
+            "type" : "constant",
+            "value" : [
+              "Nom du fichier"
+            ]
+          },
+          "content" : {
+            "type" : "expression",
+            "value" : "documentFactureGenere"
+          },
+          "columnsKey" : {
+            "type" : "constant",
+            "value" : [
+              "fileName"
+            ]
+          },
+          "selectedRow" : {
+            "type" : "variable",
+            "value" : "selectionDoc"
+          },
+          "striped" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "condensed" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "bordered" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "710a6c3b-f811-4e26-84c2-fd4c4b0e0497",
+        "hasValidationError" : false,
+        "id" : "pbTable"
+      },
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 3,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Télécharger"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "URL"
+          },
+          "targetUrl" : {
+            "type" : "expression",
+            "value" : "urlDocument"
+          },
+          "pageToken" : {
+            "type" : "constant"
+          },
+          "processName" : {
+            "type" : "constant"
+          },
+          "processVersion" : {
+            "type" : "constant"
+          },
+          "taskId" : {
+            "type" : "constant"
+          },
+          "caseId" : {
+            "type" : "constant"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_self"
+          },
+          "appToken" : {
+            "type" : "constant"
+          },
+          "urlParams" : {
+            "type" : "constant"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "success"
+          }
+        },
+        "reference" : "f0d1dffa-c454-419a-882c-daba0117a67c",
+        "hasValidationError" : false,
+        "id" : "pbLink"
       }
     ],
     [
@@ -123,7 +250,7 @@
             "value" : false
           }
         },
-        "reference" : "fb91da2c-41bd-493e-b64b-ec72fbe4db1d",
+        "reference" : "9b31fa23-87b9-44e1-87c1-05f1944f7985",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -132,7 +259,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "5648e710-b465-4a1a-8baa-6e4f45d25f03",
+          "reference" : "edca97fa-bcbc-445c-b72b-8765c0e98b72",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -155,7 +282,7 @@
                     "value" : false
                   }
                 },
-                "reference" : "494bfb7c-6e40-4e00-98cb-a1b92bdb690d",
+                "reference" : "cda3e330-ca22-4f3f-b896-a27633c35dfc",
                 "hasValidationError" : false,
                 "id" : "infosClients",
                 "binding" : {
@@ -202,7 +329,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7fb69d04-f512-4c55-95ae-95c5166907bb",
+                "reference" : "e8218fa5-d64e-47a1-9867-ed9d940bd6f0",
                 "hasValidationError" : false,
                 "id" : "pbCheckbox",
                 "description" : ""
@@ -279,7 +406,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "1ae4d9da-2bd4-429c-ac26-16ccfdc5715d",
+                "reference" : "d9266e6d-c3d8-45bf-b964-097c7ad52d28",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -331,7 +458,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "38fa74cf-8b39-4ae9-b056-2f2e60dc6abb",
+                "reference" : "d81d0aa3-badf-4e4b-b0f4-f39d19a3a9f9",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -417,13 +544,31 @@
     "cc" : {
       "type" : "url",
       "value" : [
-        "../{{context.commandeMochi_ref.link}}"
+        "../{{context.cc_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "documentFactureGenere" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseDocument?p=0&c=10&f=name=wordTestGenere&f=caseId={{task.caseId}}"
+      ],
+      "exposed" : false
+    },
+    "selectionDoc" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "urlDocument" : {
+      "type" : "expression",
+      "value" : [
+        "return \" /bonita/portal/\" + $data.selectionDoc.url;"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "e85076b9-3b7b-42b0-92db-e14098578391",
+  "uuid" : "f32f7d97-6585-48d9-b565-3b561309c5e4",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
